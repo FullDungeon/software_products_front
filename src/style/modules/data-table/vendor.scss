@@ -1,0 +1,37 @@
+/**
+ *  переопределение стилей datatables
+ */
+.data-table-wrapper {
+    // стиль кнопок навигации по страницам
+    .page-item.active .page-link {
+        background-color: $primary-color;
+        border-color: $primary-color;
+
+        &:active {
+            @include focus($primary-focus-color)
+        }
+
+        &:focus {
+            @include focus($primary-focus-color)
+        }
+    }
+
+    // все элементы ввода в таблице
+    input, select {
+        &:active {
+            @include focus($primary-focus-color)
+        }
+
+        &:focus {
+            @include focus($primary-focus-color)
+        }
+    }
+
+    // отступы хедера и футера таблицы от основного соджержимого
+    .row:first-child {
+        margin-bottom: 15px;
+    }
+    .row:last-child {
+        margin-top: 15px;
+    }
+}

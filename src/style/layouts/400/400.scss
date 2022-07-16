@@ -1,0 +1,39 @@
+.l-400 {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $bg-1-color;
+    text-align: center;
+}
+
+.l-400-wrapper {
+    margin-top: -150px;
+}
+
+.l-400-code {
+    font-size: 80px;
+    font-weight: 800;
+    color: #3e3f49;
+}
+
+.l-400-text {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #3e3f49;
+}
+
+.l-400-flex {
+    a {
+        padding-top: 30px;
+        color: #26262c;
+    }
+
+    a + a {
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,50 @@
+/*
+    Навигация внури сайдбара
+*/
+
+.l-nav {
+    margin-top: 15px;
+    padding-top: 20px;
+}
+
+.l-nav-caption {
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+    font-weight: 800;
+}
+
+.l-nav-item {
+    @include transition-all();
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $bg-2-color;
+    }
+
+    &+& {
+        margin-top: 15px;
+    }
+}
+
+.l-nav-item-icon {
+    width: 30px;
+    height: 30px;
+
+    margin-right: 10px;
+
+    .material-icons {
+        //display: block;
+        font-size: 25px;
+    }
+}

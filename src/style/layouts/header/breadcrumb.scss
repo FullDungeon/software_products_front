@@ -1,0 +1,96 @@
+.breadcrumb {
+    list-style: none;
+    overflow: hidden;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+
+    background-color: transparent;
+}
+
+.breadcrumb-item {
+    float: left;
+
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+    padding: 3px 7px;
+
+    height: 28px;
+
+    color: $primary-color;
+    line-height: $font-size-default;
+
+    @include transition-all();
+
+    &:hover {
+        cursor: pointer;
+
+        color: $primary-color;
+        background-color: $bg-2-color;
+
+        .material-icons {
+            color: $primary-color;
+        }
+
+        &:before {
+            color: $primary-color;
+        }
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: $primary-color;
+}
+
+.breadcrumb-item-root {
+    background-color: $bg-color;
+
+    .material-icons {
+        color: $primary-color;
+    }
+
+    &:hover {
+        background-color: $primary-color;
+        .material-icons {
+            color: $text-on-primary-color;
+        }
+    }
+}
+
+.breadcrumb-item-active {
+    $back-color: transparent;     // цвет фона для этого класса
+    $front-color: $primary-color; // цвет текста для этого класса
+
+    color: $front-color;
+    font-weight: 800;
+
+    background-color: $back-color;
+
+    .material-icons {
+        color: $back-color;
+    }
+
+    &:hover {
+        background-color: $back-color;
+        color: $front-color;
+        cursor: default;
+
+        .material-icons {
+            color: $front-color;
+        }
+
+        &:before {
+            color: $front-color;
+        }
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item-active::before {
+    color: $primary-color;
+}

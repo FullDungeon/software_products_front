@@ -1,0 +1,44 @@
+/*
+    Хедер макета. Описывает контейнер, кнопку "Назад" и кнопки быстрых действий.
+    Навигация определена в breadcrumb.scss.
+*/
+
+.l-header {
+    @extend %border-bottom !optional;
+
+    position: fixed;
+    width: calc(100vw - #{$aside-width});
+    left: $aside-width;
+    z-index: 1000;
+    height: $header-height;
+    padding: 15px 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: $bg-color;
+}
+
+.l-header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.l-header-back {
+    @extend .rounded-btn;
+}
+
+.l-header-actions {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-header-actions-btn {
+    @extend .rounded-btn;
+
+    & + & {
+        margin-left: 5px;
+    }
+}

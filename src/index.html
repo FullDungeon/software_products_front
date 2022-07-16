@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Главная</title>
+
+
+</head>
+<body class="preload">
+
+<!--боковая панель-->
+<aside class="l-aside">
+    <div class="l-aside-inner">
+        <!--фрагмент сайдбара с информацией о пользователе-->
+        <div class="l-profile">
+            <div class="l-profile-wrapper">
+                <div class="l-profile-user">
+                    <div class="l-profile-avatar">
+                        <i class="material-icons">admin_panel_settings</i>
+                    </div>
+                    <div class="l-profile-name-wrapper">
+                        <div class="l-profile-name">Admin</div>
+                        <div class="l-profile-role">Администратор</div>
+                    </div>
+                </div>
+
+                <a class="l-profile-btn-logout" href="">
+                    <i class="material-icons">logout</i>
+                </a>
+            </div>
+        </div> <!--l-profile-->
+
+        <!--фрагмент сайдбара с навигацией-->
+        <div class="l-nav">
+            <div class="l-nav-caption">
+                Таблицы
+            </div>
+            <a class="l-nav-item link" href="">
+                <div class="l-nav-item-icon">
+                    <i class="material-icons">wysiwyg</i>
+                </div>
+                Программные продукты
+            </a>
+            <a class="l-nav-item link" href="">
+                <div class="l-nav-item-icon">
+                    <i class="material-icons">title</i>
+                </div>
+                Типы программных продуктов
+            </a>
+            <a class="l-nav-item link" href="">
+                <div class="l-nav-item-icon">
+                    <i class="material-icons">corporate_fare</i>
+                </div>
+                Организации
+            </a>
+            <a class="l-nav-item link" href="">
+                <div class="l-nav-item-icon">
+                    <i class="material-icons">description</i>
+                </div>
+                Документы
+            </a>
+            <a class="l-nav-item link" href="">
+                <div class="l-nav-item-icon">
+                    <i class="material-icons">manage_accounts</i>
+                </div>
+                Разработчики
+            </a>
+        </div> <!--l-nav-->
+    </div>
+</aside>
+
+<!--хедер-->
+<header class="l-header">
+    <div class="l-header-nav">
+        <a class="l-header-back link" href="#">
+            <div class="breadcrumb-icon">
+                <div class="material-icons">arrow_back_ios</div>
+            </div>
+        </a>
+
+        <ul class="breadcrumb">
+            <a class="breadcrumb-item breadcrumb-item-root link" href="/">
+                <div class="material-icons">home</div>
+            </a>
+            <a class="breadcrumb-item breadcrumb-item link">Ссылка</a>
+            <a class="breadcrumb-item breadcrumb-item-active">Текущая ссылка</a>
+        </ul> <!-- breadcrumb -->
+    </div>
+
+    <div class="l-header-actions">
+        <a class="l-header-actions-btn link" data-url="">
+            <i class="material-icons">close</i>
+        </a>
+        <a class="l-header-actions-btn" href="">
+            <i class="material-icons">done</i>
+        </a>
+    </div>
+</header>
+
+<!--основное содержимое-->
+<section class="l-content">
+
+    <!--временное содержимое-->
+    <div class="">
+        <a class="temp-link" href="products.index.html">products.index.html</a> <div class="mt-2"></div>
+        <a class="temp-link" href="products.show.html">products.show.html</a> <div class="mt-2"></div>
+        <a class="temp-link" href="products.edit.html">products.edit.html</a> <div class="mt-2"></div>
+
+        <br>
+        <a class="temp-link" href="auth.index.html">auth.index.html</a> <div class="mt-4"></div>
+
+        <a class="temp-link" href="403.html">403.html</a> <div class="mt-2"></div>
+        <a class="temp-link" href="404.html">404.html</a> <div class="mt-2"></div>
+
+        <style>
+            .temp-link {
+                margin-top: 10px;
+                padding: 3px 10px;
+
+                border-radius: 5px;
+                background-color: lightgray;
+
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    </div>
+    <!------------------------>
+
+
+    <!--пример элементов формы-->
+    <h4 class="mt-5 fw-bold">Пример элементов формы</h4>
+    <div>
+        <form>
+            <div class="row g-3">
+                <!--текст-->
+                <div class="col-lg-12">
+                    <label for="input-text" class="form-label">Ввод текста</label>
+                    <input id="input-text" type="text" class="form-control"/>
+                    <div class="form-text">Описание содержимого текстового поля, находящегося вверху</div>
+                </div>
+                <!--файл-->
+                <div class="col-lg-6">
+                    <label for="input-file" class="form-label">Загрузка файла</label>
+                    <input id="input-file" type="file" class="form-control"/>
+                    <div class="form-text">Загрузка файла с диска</div>
+                </div>
+                <!--выпадающий список-->
+                <div class="col-lg-4">
+                    <label for="input-select" class="form-label">Выбор типа</label>
+                    <select id="input-select" class="form-control">
+                        <option value="1">ИАС</option>
+                        <option value="2">ИСС</option>
+                        <option value="3">СПС</option>
+                    </select>
+                    <div class="form-text">Выбор файла с диска</div>
+                </div>
+                <!--даты-->
+                <div class="col-lg-2">
+                    <label for="input-date" class="form-label">Даты разработки</label>
+                    <input id="input-date" type="date" class="form-control"/>
+                    <div class="form-text">Выбор даты разработки</div>
+                </div>
+                <!--многострочный текст-->
+                <div class="col-lg-12">
+                    <label for="input-textarea" class="form-label">Описание</label>
+                    <textarea id="input-textarea" class="form-control" rows="7"></textarea>
+                    <div class="form-text">Выбор даты разработки</div>
+                </div>
+                <!--пароль-->
+                <div class="col-lg-4">
+                    <label for="input-password" class="form-label">Пароль</label>
+                    <div class="form-password">
+                        <input id="input-password" type="password" class="form-control"/>
+                        <i class="form-password-button material-icons">visibility</i>
+                    </div>
+                    <div class="form-text">Поле для ввода пароля</div>
+                </div>
+                <!--мельтиселект-->
+                <div class="col-lg-6">
+                    <label for="input-multiselect" class="form-label">Пользователи</label>
+                    <select id="input-multiselect" class="form-control" multiple data-live-search="true">
+                        <option selected>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Barbecue</option>
+                    </select>
+                    <div class="form-text">Список пользователей программного продукта</div>
+                </div>
+                <div class="w-100 d-none d-md-block"></div>
+                <!--чекбокс-->
+                <div class="col-lg-6">
+                    <div class="form-check">
+                        <input id="input-checkbox" type="checkbox" class="form-check-input"/>
+                        <label for="input-checkbox" class="form-check-label">Даты разработки</label>
+                    </div>
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+    <!-------------------------->
+
+</section>
+
+</body>
+</html>

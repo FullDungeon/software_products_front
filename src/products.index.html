@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>products.index</title>
+
+</head>
+<body class="preload">
+
+<!--боковая панель-->
+<aside class="l-aside"></aside>
+
+<!--хедер-->
+<header class="l-header"></header>
+
+<section class="l-content">
+    <!--таблица Data Table-->
+    <div class="data-table-wrapper">
+        <!--заголовок-->
+        <table class="table data-table display responsive">
+            <thead>
+                <tr>
+                    <th class="dt-th-5-ps">№</th>
+                    <th class="dt-th-7-ps">Тип</th>
+                    <th class="dt-th-15-ps">Название</th>
+                    <th class="dt-th-56-ps">Назначение</th>
+                    <th class="dt-th-12-ps">Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center"></td>
+                    <td>ИСС</td>
+                    <td>Портал академии</td>
+                    <td>Портал академии предназначен для предоставление всем структурным подразделениям автоматизированных услуг организации и контроля учебного процесс</td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <a class="data-table-btn material-icons" href="">open_in_new</a>
+                            <a class="data-table-btn material-icons" href="">edit</a>
+                            <a class="data-table-btn material-icons" data-action="delete" data-record-name="Портал академии" href="#">delete</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <!--data-table-wrapper-->
+</section>
+
+<!--модальное окно (подтверждение удаления записи из таблицы)-->
+<div class="modal fade" id="modalDeleteRecord" tabindex="-1" aria-labelledby="modalTopLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTopLabel">Предупреждение</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Вы действительно хотите удалить запись "<span class="modal-record-name"></span>"?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn modal-button-ok">Удалить</button>
+            </div>
+        </div>
+    </div>
+</div> <!--modal-->
+
+</body>
+</html>

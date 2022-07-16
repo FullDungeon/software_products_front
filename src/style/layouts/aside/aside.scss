@@ -1,0 +1,22 @@
+/*
+    Контейнер боковой панели. Описаны размер, положение, цвет и внутренние отступы.
+    Содержит два блока:
+    ---- profile (profile.scss)
+    ---- nav (nav.scss)
+*/
+
+.l-aside {
+    @extend %border-right !optional;
+
+    position: fixed;
+    left: 0;
+
+    width: $aside-width;
+    height: 100vh;
+    background-color: $bg-1-color;
+    z-index: 1000;
+}
+
+.l-aside-inner {
+    padding: 10px;
+}

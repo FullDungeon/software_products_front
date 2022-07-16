@@ -1,0 +1,63 @@
+.data-table-wrapper {
+    border-radius: 5px;
+    padding: 20px;
+
+    @extend %border;
+}
+
+.data-table {
+    table-layout: fixed;
+    width: 100%;
+    white-space: nowrap;
+
+    // ширина колонок в процентах
+    @for $i from 1 to 101 {
+        .dt-th-#{$i}-ps {
+            width: $i * 1%;
+        }
+    }
+
+    tr {
+        @include transition-all();
+
+        &:hover {
+            background-color: $bg-1-color;
+        }
+    }
+
+    th {
+        @include transition-all();
+
+        text-align: center !important;
+
+        &:hover {
+            background-color: $bg-2-color;
+            cursor: pointer;
+        }
+    }
+
+    td {
+        vertical-align: middle;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .data-table-btn {
+        @include transition-all();
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 5px 3px 5px;
+        border-radius: 5px;
+
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $bg-3-color;
+            cursor: pointer;
+        }
+    }
+}

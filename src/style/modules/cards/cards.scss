@@ -1,0 +1,111 @@
+/* карточка (оформление)
+
+* .card       - карточка
+* .card-title - заголовок карточка
+* .card-row   - строка с содержимым
+*/
+.card {
+    padding: 20px;
+
+    & + & {
+        margin-top: 15px;
+    }
+}
+.card-title {
+    font-size: 18px;
+    font-weight: 800;
+
+    // ? благодаря этому текст обрезается
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card-row {
+    margin-top: 10px;
+
+    & + & {
+        margin-top: 20px;
+    }
+}
+
+
+/* обычный текст с подписью
+
+* .card-text  - текст
+* .card-label - подпись
+*/
+.card-text {
+    text-align: justify;
+}
+.card-label {
+    font-size: 12px;
+    color: $inactive-color-text;
+}
+
+
+/* список
+
+* .card-list      - список
+* .card-list-item - элемент списка
+*/
+.card-list {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.card-list-item {
+    list-style-type: none;
+}
+
+
+/* список файлов и документов
+
+* .card-file-list           - список
+* .card-file-list-item      - элемент списка
+* .card-file-list-item-icon - иконка файла
+* .card-file-list-item-name - название файла
+*/
+.card-file-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.card-file-list-item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    color: $primary-color;
+    text-decoration: none;
+    background-color: $bg-color;
+    border-radius: 5px;
+    border: solid 1px $border-color;
+
+    @include transition-all();
+
+    &:hover {
+        background-color: $bg-1-color;
+        cursor: pointer;
+    }
+
+    & + & {
+        margin-top: 6px;
+    }
+}
+
+.card-file-list-item-icon {
+    font-size: 25px;
+
+    padding: 10px;
+    background-color: $bg-2-color;
+    border-radius: 5px 0 0 5px;
+    border-right: solid 1px $border-color;
+}
+
+.card-file-list-item-name {
+    margin-left: 10px;
+    margin-bottom: 0;
+}

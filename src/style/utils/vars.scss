@@ -1,0 +1,51 @@
+// ---- COLORS
+$bg-color: #fff;
+$bg-1-color: #f6f6f6;
+$bg-2-color: #e8e8e8;
+$bg-3-color: #dadada;
+
+$inactive-color-bg: #F5F5FD;
+$inactive-color-text: #808994;
+
+// primary
+$primary-color: #232323;
+$primary-light-color: #484848;
+$primary-dark-color: #000000;
+$primary-focus-color: #1f1f1f26;
+
+// accent
+$accent-color: #347DFD;
+$accent-light-color: #62a3ff;
+$accent-dark-color: #004a9f;
+$accent-focus-color: #4C75D054;
+
+// text
+$text-color: $primary-color;
+$text-on-primary-color: #ffffff;
+$text-on-accent-color: #ffffff;
+
+// other
+$shadow-color: #00000033;
+$input-autofill-color: #f7faff;
+$form-hint-color: #818181;
+$border-color: #1f1f1f38;
+
+
+// ---- FONT SIZE
+$font-size-default: 14px;
+$font-size-header-1: 25px;
+$font-size-header-2: 21px;
+$font-size-header-3: 18px;
+$font-size-header-4: 15px;
+
+
+// ---- SIZES
+$input-height: 35px;
+$select-height: 38px;
+$btn-height: 38px;
+
+// высота header
+$header-height: 60px;
+
+// ширина боковой панели
+$aside-width: 320px;

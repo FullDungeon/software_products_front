@@ -1,0 +1,8 @@
+/*
+    Контейнер для основного содержимого на странице
+*/
+
+.l-content {
+    margin-left: calc(#{$aside-width});
+    padding: calc(#{$header-height} + 20px) 20px 20px 20px;
+}

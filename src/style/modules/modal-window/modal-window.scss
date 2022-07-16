@@ -1,0 +1,13 @@
+.modal-title {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.modal-body {
+    font-size: 14px;
+}
+
+// кнопка закрытия на модальном окне
+.btn-close:focus {
+    @include focus($primary-focus-color);
+}

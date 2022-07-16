@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+p + p {
+    margin-top: 6px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $font-size-default;
+    color: $text-color;
+}
+
+a:hover {
+    color: $text-color;
+    text-decoration: none;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}

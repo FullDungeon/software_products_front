@@ -1,0 +1,41 @@
+// ---- Кнопки, форма: скругленный прямоугольник
+
+// белый цвет, черный текст
+// при наведении цвета меняются
+.rounded-btn {
+    @include transition-all();
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3px 7px;
+    height: 28px;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $primary-color;
+        color: $text-on-primary-color;
+    }
+}
+
+// белый текст, черный фон
+// при наведении цвета меняются
+.rounded-btn-invert {
+    @extend .rounded-btn;
+
+    color: $text-on-primary-color;
+    background-color: $primary-color;
+
+    &:hover {
+        background-color: $text-on-primary-color;
+        color: $primary-color;
+    }
+}

@@ -1,0 +1,16 @@
+// ---- ГРАНИЦЫ
+%border {
+    border: 1px solid $border-color;
+}
+%border-left {
+    border: 1px solid $border-color;
+}
+%border-right {
+    border-right: 1px solid $border-color;
+}
+%border-up {
+    border-up: 1px solid $border-color;
+}
+%border-bottom {
+    border-bottom: 1px solid $border-color;
+}

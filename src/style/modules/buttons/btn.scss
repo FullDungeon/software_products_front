@@ -1,0 +1,35 @@
+.btn {
+    font-weight: 800;
+    font-size: $font-size-default;
+
+    height: $btn-height;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    background-color: $primary-color;
+    color: $text-on-primary-color;
+
+    // при наведении и нажатии
+    @include transition-all();
+
+    &:focus {
+        @include focus($primary-focus-color);
+    }
+
+    &:hover {
+        color: $text-on-primary-color;
+        background-color: $primary-dark-color;
+    }
+
+    // неактивная кнопка
+    &[disabled] {
+        background-color: $primary-light-color;
+        @include select-off;
+    }
+}

@@ -1,0 +1,74 @@
+/*
+    фрагмент сайдбара с информацией о пользователе
+*/
+
+.l-profile {
+    margin: -10px -11px 0 -10px;
+    padding: 5px 15px;
+
+    height: $header-height;
+
+    background-color: $primary-color;
+    border-bottom: 1px solid $border-color;
+}
+
+.l-profile-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+.l-profile-user {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.l-profile-avatar {
+    @include select-off();
+
+    color: $bg-color;
+    border: $border-color;
+    border-radius: 100px;
+
+    width: 35px;
+    height: 35px;
+
+    .material-icons {
+        font-size: 30px;
+        color: $text-on-primary-color;
+    }
+}
+
+.l-profile-name-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 3px;
+    margin-left: 15px;
+
+    height: 100%;
+}
+
+.l-profile-name {
+    font-weight: 800;
+
+    color: $text-on-primary-color;
+
+    border-bottom: 2px solid transparent;
+    line-height: 13px;
+}
+
+.l-profile-role {
+    color: $text-on-primary-color;
+    font-size: 12px;
+}
+
+.l-profile-btn-logout {
+    @extend .rounded-btn-invert;
+    @include select-off();
+}

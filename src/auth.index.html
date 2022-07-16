@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>auth.index</title>
+
+</head>
+<body class="preload">
+
+<!--форма аутентификации-->
+<section class="l-auth">
+    <div class="l-auth-card">
+        <form method="post" action="" class="l-auth-form">
+            <h1 class="l-auth-caption mb-4">Войти</h1>
+
+            <div class="row g-3">
+                <div class="col-lg-12">
+                    <label for="name" class="form-label">Имя пользователя</label>
+                    <input id="name" type="text" class="form-control" name="name" autocomplete="on">
+                </div>
+
+                <div class="col-lg-12">
+                    <label for="password" class="form-label">Пароль</label>
+                    <div class="form-password">
+                        <input id="password" type="password" class="form-control" autocomplete="on"/>
+                        <i class="form-password-button material-icons">visibility</i>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="form-check">
+                        <input id="remember" type="checkbox" class="form-check-input"/>
+                        <label for="remember" class="form-check-label">Запомнить меня</label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="loginError" class="alert alert-danger error-message" role="alert">
+                        Неправильные имя пользователя или пароль.
+                    </div>
+
+                    <input type="submit" class="btn l-auth-btn" value="Войти">
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>products.edit</title>
+
+
+</head>
+<body class="preload">
+
+<!--боковая панель-->
+<aside class="l-aside">
+    <div class="l-aside-inner">
+
+    </div>
+</aside>
+
+<!--хедер-->
+<header class="l-header">
+
+</header>
+
+<!--основное содержимое-->
+<section class="l-content">
+    <form action="" method="post">
+        <div class="row-cols-auto">
+            <div class="col-xl-7 col-12">
+
+                <!--основная информация-->
+                <div class="card">
+                    <h3 class="card-title">Портал академии</h3>
+
+                    <div class="card-row">
+                        <label for="name" class="form-label">Название:</label>
+                        <input id="name" name="name" type="text" class="form-control field" autocomplete="off"/>
+                        <div class="form-text">Название программного продукта</div>
+                    </div> <!--название-->
+
+                    <div class="card-row">
+                        <label for="type" class="form-label">Тип:</label>
+                        <select id="type" name="type" class="form-control field">
+                            <option value="1">ИАС</option>
+                            <option value="2">ИСС</option>
+                            <option value="3">СПС</option>
+                        </select>
+                        <div class="form-text">Тип программного продукта</div>
+                    </div> <!--тип-->
+
+                    <div class="card-row">
+                        <label for="customer" class="form-label">Заказчик:</label>
+                        <select id="customer" name="customer" class="form-control field">
+                            <option value="1">ГУК МО РФ</option>
+                            <option value="2">ДИС</option>
+                        </select>
+                    </div> <!--заказчик-->
+
+                    <div class="card-row">
+                        <label for="users" class="form-label">Пользователи</label>
+                        <select id="users" name="users" class="form-control field" multiple="multiple" style="width: 100%"
+                                data-live-search="true">
+                            <option selected>ГВЦ ВС РФ</option>
+                            <option>ГУК МО РФ</option>
+                        </select>
+                        <div class="form-text">Список пользователей программного продукта</div>
+                    </div> <!--пользователи-->
+
+                    <div class="card-row">
+                        <label for="destiny" class="form-label">Назначение</label>
+                        <textarea id="destiny" name="destiny" class="form-control form-textarea field" rows="7"></textarea>
+                    </div> <!--назначение-->
+                </div>
+
+                <!--разработка и сопровождение-->
+                <div class="card">
+                    <h3 class="card-title">Разработка и сопровождение</h3>
+
+                    <!--диапазоны дат-->
+                    <div class="card-row">
+                        <div class="row">
+                            <div class="col-xl-6 col-12">
+                                <label for="dev_start_date" class="form-label">Начало разработки</label>
+                                <input id="dev_start_date" name="dev_start_date" type="date"
+                                       class="form-control form-date field">
+                            </div>
+
+                            <div class="col-xl-6 col-12">
+                                <label for="dev_end_date" class="form-label">Окончание разработки</label>
+                                <input id="dev_end_date" name="dev_end_date" type="date" class="form-control field"/>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-xl-6 col-12">
+                                <label for="sup_start_date" class="form-label">Начало сопровождения</label>
+                                <input id="sup_start_date" name="dev_start_date" type="date"
+                                       class="form-control form-date field">
+                            </div>
+
+                            <div class="col-xl-6 col-12">
+                                <label for="sup_end_date" class="form-label">Окончание сопровождения</label>
+                                <input id="sup_end_date" name="dev_end_date" type="date" class="form-control field"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--разработчики-->
+                    <div class="card-row">
+                        <label for="developers" class="form-label">Разработчики</label>
+                        <select id="developers" name="developers" class="form-control field" multiple="multiple" style="width: 100%"
+                                data-live-search="true">
+                            <option selected>л-т Иванов А.А.</option>
+                            <option>к-н Петров С.Е.</option>
+                            <option>к-н Петров С.Е.</option>
+                        </select>
+                        <div class="form-text">Список разработчиков программного продукта</div>
+                    </div>
+
+                </div>
+
+                <!--документы и файлы-->
+                <div class="card">
+                    <h3 class="card-title">Документы и файлы</h3>
+
+                    <div class="card-row">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+    <button class="link">Хуй</button>
+</section>
+
+<div class="modal fade" id="modalDiscardChanges" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="modalTitle" class="modal-title">Предупреждение</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div id="modalBody" class="modal-body">
+                На странице есть <b>несохраненные</b> изменения. Если продолжить переход, они будут потеряны. Продолжить?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-accent modal-button-ok">Да</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
